@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Order Dashboard</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <h1>Order Dashboard</h1>
+    <span class="tag">prototype · fictional data · in memory</span>
+  </header>
+
+  <main class="layout">
+    <aside class="side">
+      <section class="card">
+        <h2>New order</h2>
+        <form id="order-form" autocomplete="off">
+          <label>Customer
+            <input name="customerName" required placeholder="Customer Name">
+          </label>
+          <label>Address
+            <input name="address" required placeholder="123 Street">
+          </label>
+          <fieldset>
+            <legend>Items</legend>
+            <div id="items"></div>
+            <button type="button" id="add-item" class="ghost">+ Add item</button>
+          </fieldset>
+          <button type="submit" class="primary">Create order</button>
+        </form>
+      </section>
+
+      <section class="card">
+        <h2>Drivers</h2>
+        <ul id="drivers" class="drivers"></ul>
+      </section>
+    </aside>
+
+    <section class="board" id="board" aria-label="Orders by status"></section>
+  </main>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="/app.js"></script>
+</body>
+</html>

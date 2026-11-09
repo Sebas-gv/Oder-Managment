@@ -1,0 +1,14 @@
+{
+  "name": "order-management-prototype",
+  "version": "1.0.0",
+  "description": "Order management prototype (fictional data, in memory)",
+  "private": true,
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "node --test \"test/*.test.js\""
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
